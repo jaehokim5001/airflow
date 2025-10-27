@@ -15,17 +15,17 @@ with DAG(
     )
     bash_t2 = BashOperator(
         task_id="bash_t2",
-        bash_command="echo $HOSTNAME; echo good",
+        bash_command="echo $HOSTNAME; echo goods",
     )
 
     bash_t3 = BashOperator(
         task_id="bash_t3",
-        bash_command="echo $HOSTNAME; echo good",
+        bash_command="echo $HOSTNAME; echo goods",
     )
 
     bash_t4 = BashOperator(
         task_id="bash_t4",
-        bash_command="echo $HOSTNAME; echo good",
+        bash_command="echo $HOSTNAME; echo goods",
     )
 
     bash_t1 >> bash_t2 >> bash_t3 >> bash_t4

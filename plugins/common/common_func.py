@@ -1,2 +1,2 @@
 def get_sftp():
-    print("SFTP function called")
+    print('SFTP function called')

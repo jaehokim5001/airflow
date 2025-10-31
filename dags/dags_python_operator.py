@@ -14,7 +14,6 @@ with DAG(
     def select_fruit():
         fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
         rand_int = random.randint(0, 4)
-        selected_fruit = random.randint(fruits)
         print(fruits[rand_int])
 
     py_t1 = PythonOperator(

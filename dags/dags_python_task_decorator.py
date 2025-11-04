@@ -12,7 +12,7 @@ with DAG(
     def print_context(some_input):
         print(some_input)
 
-        python_task1 = print_context('task_decorator_실행')
+    python_task1 = print_context('task_decorator_실행')
 
 
         

@@ -15,7 +15,7 @@ with DAG(
     # BashOperator를 사용하여 태스크 정의
     bash_t1 = BashOperator(
         task_id='bash_t1',
-        bash_command='echo "data_Interval_end:"{{ data_interval_end }}"'
+        bash_command='echo "data_interval_end: {{ data_interval_end }}  "'
     )
 
     bash_t2 = BashOperator(

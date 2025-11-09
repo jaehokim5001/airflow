@@ -33,4 +33,4 @@ with DAG(
         print(f"Pulled Value 2: {value2}")
 
 
-        xcom_push1() >> xcom_push2() >> xcom_pull()
+    xcom_push1() >> xcom_push2() >> xcom_pull()

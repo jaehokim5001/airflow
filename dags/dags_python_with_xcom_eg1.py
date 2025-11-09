@@ -27,7 +27,7 @@ with DAG(
     def xcom_pull(**kwargs):
         ti = kwargs['ti']
 
-        value1 = ti.xcom_pull(key="result1", task_ids=['python_xcom_push_task1','python_xcom_push_task2'])
+        value1 = ti.xcom_pull(key="result1", task_ids='python_xcom_push_task2')
         value2 = ti.xcom_pull(key="result2", task_ids='python_xcom_push_task1')
         print(value1)
         print(value2)

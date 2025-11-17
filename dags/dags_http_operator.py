@@ -4,7 +4,6 @@ from airflow import DAG,task
 
 with DAG(
     dag_id="dags_http_operator",
-    schedule="0 9 * * *",
     start_date=pendulum.datetime(2023, 1, 1, tz="Asia/Seoul"),
     catchup=False,
     schedule=None

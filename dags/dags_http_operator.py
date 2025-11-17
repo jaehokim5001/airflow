@@ -15,7 +15,6 @@ with DAG(
         method='GET',
         http_conn_id='openapi.seoul.go.kr',
         endpoint='{{var.value.apikey_openapi_seoul_go_kr}}/JSON/GetJobInfo/1/5/',
-        method ='GET',
         headers= {'Content-Type': 'application/json',
                         'charset': 'utf-8',
                         'Accept': '*/*'

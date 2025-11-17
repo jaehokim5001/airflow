@@ -1,6 +1,7 @@
 import pendulum
 from airflow.providers.http.operators.http import HttpOperator
-from airflow import DAG,task
+from airflow import DAG
+from airflow.decorators import task
 
 with DAG(
     dag_id="dags_http_operator",

@@ -11,9 +11,9 @@ with DAG(
     
     tb_seoul_jobinfo = SeoulApiToCsvOperator(
         task_id='tb_seoul_jobinfo',
-        dataset_nm='Tbseoul_jobinfo',
-        path='/opt/airflow/files/Tbseoul_jobinfo/{{data_interval_end.in_timezone("Asia/Seoul") | ds_nodash }}',
-        file_name='Tbseoul_jobinfo.csv'
+        dataset_nm='GetJobInfo',
+        path='/opt/airflow/files/GetJobInfo/{{data_interval_end.in_timezone("Asia/Seoul") | ds_nodash }}',
+        file_name='GetJobInfo.csv'
     )  
 
     tb_seoul_jobinfo

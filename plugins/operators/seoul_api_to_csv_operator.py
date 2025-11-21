@@ -27,6 +27,7 @@ class SeoulApiToCsvOperator(BaseOperator):
         while True:
             self.log.info(f'시작:{start_row}')
             self.log.info(f'끝:{end_row}')
+            self.log.info(f'요청 URL:{self.base_url}/{start_row}/{end_row}/')
             row_df = self._call_api(self.base_url, start_row, end_row)
             total_row_df = pd.concat([total_row_df, row_df])
             if len(row_df) < 1000:

@@ -56,6 +56,7 @@ def crawler_agent() -> str:
     for keyword in keywords:
         print(f"[{keyword}] 검색 데이터 수집 중...")
         search_url = f"https://search.naver.com/search.naver?where=news&query={keyword}"
+        print(f"[{keyword}] 요청 URL: {search_url}")
         
         try:
             time.sleep(1) # 차단 방지를 위한 지연

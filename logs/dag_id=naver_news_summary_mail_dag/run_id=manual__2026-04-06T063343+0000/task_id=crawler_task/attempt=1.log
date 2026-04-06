@@ -1,0 +1,14 @@
+{"timestamp":"2026-04-06T06:33:45.232647Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T06:33:45.235209Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T06:33:47.418166Z","level":"info","event":"[1/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:48.307447Z","level":"info","event":"[2/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:49.168316Z","level":"info","event":"[3/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:50.305005Z","level":"info","event":"[4/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:51.200516Z","level":"info","event":"[5/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:52.054052Z","level":"info","event":"[6/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:52.904461Z","level":"info","event":"[7/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:53.780514Z","level":"info","event":"[8/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:54.673994Z","level":"info","event":"[9/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:55.824916Z","level":"info","event":"[10/10] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:33:55.830875Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw_news.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-04-06T06:33:55.831417Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d617f-4733-7015-89f3-450178e4a382'), task_id='crawler_task', dag_id='naver_news_summary_mail_dag', run_id='manual__2026-04-06T06:33:43+00:00', try_number=1, dag_version_id=UUID('019d617f-0e1e-77de-a59e-08c1c962a175'), map_index=-1, hostname='101858c45c06', context_carrier={}, task=<Task(PythonOperator): crawler_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 6, 6, 33, 45, 122665, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

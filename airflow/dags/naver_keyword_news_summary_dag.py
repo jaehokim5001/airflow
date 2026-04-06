@@ -54,7 +54,10 @@ def crawler_agent() -> str:
         # 봇 탐지 우회를 위해 모바일 버전(m.search) 및 모바일 UA 사용
         search_url = f"https://m.search.naver.com/search.naver?where=m_news&query={keyword}"
         headers = {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Referer": "https://m.naver.com/"
         }
         print(f"[{keyword}] 요청 URL (Mobile): {search_url}")
         
@@ -64,22 +67,29 @@ def crawler_agent() -> str:
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # 뉴스 검색 결과의 제목 요소 선택 (네이버 뉴스 검색결과 구조 기준)
-            news_items = soup.select('.news_tit')[:5]
+            # 뉴스 검색 결과의 제목 요소 선택 (CSS 클래스가 아닌 a 태그의 href와 텍스트 기반 추출)
+            links = soup.find_all('a', href=True)
+            by_href = {}
+            
+            for a in links:
+                href = a['href']
+                text = a.text.strip()
+                # 기사 링크인지 식별 (article, naver.com, news 등의 키워드 포함 여부)
+                if 'article' in href and ('naver.com' in href or 'news' in href) and text:
+                    if href not in by_href:
+                        by_href[href] = []
+                    by_href[href].append(text)
+            
             keyword_data = []
-
-            for item in news_items:
-                title = item.text.strip()
-                link = item['href']
+            # 상위 5건 데이터 가공
+            for href, texts in list(by_href.items())[:5]:
+                # 구조상 첫 번째 텍스트가 주로 제목, 가장 긴 텍스트가 요약문임
+                title = texts[0]
+                snippet = max(texts, key=len) if len(texts) > 1 else "요약 정보 없음"
                 
-                # 본문 내용을 긁어오기 위한 추가 시도 (뉴스 상세 페이지 대신 검색 결과의 요약 텍스트 수집)
-                # 검색 결과 페이지의 .news_dsc .dsc_txt_wrap 클래스에 요약이 있음
-                dsc_wrap = item.find_parent('div', class_='news_wrap').select_one('.news_dsc')
-                snippet = dsc_wrap.text.strip() if dsc_wrap else "요약 정보 없음"
-
                 keyword_data.append({
                     "title": title,
-                    "link": link,
+                    "link": href,
                     "snippet": snippet
                 })
             

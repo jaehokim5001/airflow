@@ -1,0 +1,5 @@
+{"timestamp":"2026-04-06T07:18:18.344834Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T07:18:18.347162Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_keyword_news_summary_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T07:18:18.736463Z","level":"info","event":"메일 발송 시도 (jhk5055@nate.com)...","logger":"task.stdout"}
+{"timestamp":"2026-04-06T07:18:21.158478Z","level":"info","event":"메일 전송 완료!","logger":"task.stdout"}
+{"timestamp":"2026-04-06T07:18:21.290861Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}

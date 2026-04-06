@@ -126,8 +126,7 @@ with DAG(
     
     messenger_task = PythonOperator(
         task_id="messenger_task", 
-        python_callable=messenger_agent,
-        provide_context=True
+        python_callable=messenger_agent
     )
 
     crawler_task >> analyst_task >> messenger_task

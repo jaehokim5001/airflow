@@ -18,7 +18,7 @@ from collections import Counter
 import pendulum
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.providers.standard.operators.python import PythonOperator
 from airflow.providers.smtp.operators.smtp import EmailOperator
 
 # 데이터를 저장할 절대경로 지정 (보통 Airflow docker 컨테이너 내부의 /opt/airflow/data 이거나 컨테이너 CWD/data)

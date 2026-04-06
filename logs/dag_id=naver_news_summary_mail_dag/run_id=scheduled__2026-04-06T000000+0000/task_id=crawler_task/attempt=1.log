@@ -1,0 +1,16 @@
+{"timestamp":"2026-04-06T05:25:12.402036Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T05:25:12.405167Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T05:25:12.934109Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/naver_news_summary_mail_dag.py","lineno":21,"logger":"py.warnings"}
+{"timestamp":"2026-04-06T05:25:14.983570Z","level":"info","event":"[1/10] 1인 창조기업 116만 2천여 곳…연 매출 평균 '2억 6천여만 원' 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:16.356614Z","level":"info","event":"[2/10] 대우건설, 올해 정비사업 수주액 2조원 돌파 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:18.170648Z","level":"info","event":"[3/10] 한화손보, 車보험 최대 매출…“캐롯 통합 시너지” 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:19.544865Z","level":"info","event":"[4/10] 국가채무 1300조 돌파…증시 호황에 자산도 366조↑ 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:20.897954Z","level":"info","event":"[5/10] 현대차그룹, 4대 정책금융기관과 ‘새만금 협력’…9조원 투자 기반 강화 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:22.278936Z","level":"info","event":"[6/10] 정부, 협동조합 성장 단계별 육성…금융·세제 지원 확대 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:23.645824Z","level":"info","event":"[7/10] 여한구 \"미 의약품 관세, 단기 영향은 제한적…긴장 놓쳐선 안 돼\" 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:25.031132Z","level":"info","event":"[8/10] AMRO, 한국 올해 물가상승률 1.9%→2.3%... \"에너지 가격 상승\" 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:26.677463Z","level":"info","event":"[9/10] 신현송 한은 총재 후보 재산 82억 신고…22억이 ETF 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:28.207493Z","level":"info","event":"[10/10] 30억 미만 소액공모, 증권신고서 대신 간소화된 서류 공시 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:28.208971Z","level":"info","event":"크롤링 완료. 데이터 저장 위치: /opt/airflow/data/raw_news.json","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:28.213982Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw_news.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-04-06T05:25:28.214676Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d6140-7656-73f8-8a4d-afad7552abf9'), task_id='crawler_task', dag_id='naver_news_summary_mail_dag', run_id='scheduled__2026-04-06T00:00:00+00:00', try_number=1, dag_version_id=UUID('019d6133-9f8b-7e56-a268-4f32151bbfc2'), map_index=-1, hostname='101858c45c06', context_carrier={}, task=<Task(PythonOperator): crawler_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 6, 5, 25, 8, 202693, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

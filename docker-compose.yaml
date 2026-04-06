@@ -296,7 +296,7 @@ services:
       _PIP_ADDITIONAL_REQUIREMENTS: ''
       AIRFLOW__SMTP__SMTP_HOST: 'smtp.gmail.com'
       AIRFLOW__SMTP__SMTP_USER: 'j.h.kim6844@gmail.com'
-      AIRFLOW__SMTP__SMTP_PASSWORD: 'vrikofwqwgtcgmhr'
+      AIRFLOW__SMTP__SMTP_PASSWORD: 'twsexivomyswgeca'
       AIRFLOW__SMTP__SMTP_PORT: 587
       AIRFLOW__SMTP__SMTP_MAIL_FROM: 'j.h.kim6844@gmail.com'
     user: "0:0"

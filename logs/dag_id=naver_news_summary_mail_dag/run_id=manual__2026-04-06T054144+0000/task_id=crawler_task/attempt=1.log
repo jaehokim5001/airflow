@@ -1,0 +1,15 @@
+{"timestamp":"2026-04-06T05:41:46.626315Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T05:41:46.628541Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T05:41:48.836965Z","level":"info","event":"[1/10] 내일 실적 발표하는 삼성전자, “1분기 영업익 50조” 전망 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:50.583703Z","level":"info","event":"[2/10] 1인 창조기업 수 15% 증가한 116만개…매출도 늘어 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:51.948306Z","level":"info","event":"[3/10] 재생에너지 100GW·신차 40% 전기·수소차로…조기 달성 추진 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:53.334621Z","level":"info","event":"[4/10] 한화손보, 車보험 최대 매출…“캐롯 통합 시너지” 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:54.758609Z","level":"info","event":"[5/10] 도심 복합사업 재가동해 ‘공급 절벽’ 해소… 용적률 1.4배로 완화 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:56.156224Z","level":"info","event":"[6/10] 개발제한구역 내 야영장 등 설치 기준 완화…“생업·주거 불편 개선” 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:57.513715Z","level":"info","event":"[7/10] 한화, 자산 유동화로 한화솔루션 7천억 수혈…차입 최소화 방침 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:41:59.164952Z","level":"info","event":"[8/10] 작년 상위 1천 개 상장사 매출 합계 2천조 돌파…삼성전자 부동의 1위 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:42:00.526148Z","level":"info","event":"[9/10] 반도체 산업서 활용하는 IC트레이 '순환자원' 지정 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:42:01.868093Z","level":"info","event":"[10/10] 정부 \"재정사업 성과목표 달성률, 2년 연속 80% 웃돌아\" 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:42:01.869388Z","level":"info","event":"크롤링 완료. 데이터 저장 위치: /opt/airflow/data/raw_news.json","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:42:01.873348Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw_news.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-04-06T05:42:01.873959Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d614f-b0d5-721c-ab3d-7ff76540e9f2'), task_id='crawler_task', dag_id='naver_news_summary_mail_dag', run_id='manual__2026-04-06T05:41:44+00:00', try_number=1, dag_version_id=UUID('019d6133-9f8b-7e56-a268-4f32151bbfc2'), map_index=-1, hostname='101858c45c06', context_carrier={}, task=<Task(PythonOperator): crawler_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 6, 5, 41, 46, 576492, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

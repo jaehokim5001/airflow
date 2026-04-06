@@ -1,0 +1,16 @@
+{"timestamp":"2026-04-06T05:25:12.412032Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T05:25:12.414829Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T05:25:12.934155Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/naver_news_summary_mail_dag.py","lineno":21,"logger":"py.warnings"}
+{"timestamp":"2026-04-06T05:25:14.961619Z","level":"info","event":"[1/10] 삼천당제약 전인석 대표, 2500억원 규모 블록딜 철회 \"시장 불확실성 해소 우선\" 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:16.333377Z","level":"info","event":"[2/10] KB금융, 써클 CEO 방한…스테이블코인 협력 본격화 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:18.079543Z","level":"info","event":"[3/10] 산업부, 통상조약 피해기업 지원 사업 모집…연 2% 융자 지원 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:19.466520Z","level":"info","event":"[4/10] 지오영, 토털마케팅 3년 만에 지르텍 800만개 돌파 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:20.847318Z","level":"info","event":"[5/10] 한미글로벌, 부산 재건축 최대어 '삼익비치' 건설사업관리 수주 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:22.227868Z","level":"info","event":"[6/10] 의약품에도 232조 품목 관세…정부, 업계와 대응 방향 논의[Pick코노미] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:23.618941Z","level":"info","event":"[7/10] “제2의 빗썸 사태 막는다”…금융위, 가상자산 거래소 5분 단위 상시 감시·내부통제 도입 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:25.003021Z","level":"info","event":"[8/10] 공정위, '하도급 부실 계약서' 성우하이텍에 과징금 4천600만원 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:26.613418Z","level":"info","event":"[9/10] 노동부 \"AI가 일자리 대체 10%…청년 고용 증가엔 악영향\" 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:28.019292Z","level":"info","event":"[10/10] 대우건설, 올해 정비사업 누적 수주 2조원 달성 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:28.020970Z","level":"info","event":"크롤링 완료. 데이터 저장 위치: /opt/airflow/data/raw_news.json","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:25:28.026893Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw_news.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-04-06T05:25:28.027579Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d6140-7239-715c-9fa5-11dfa5f391ba'), task_id='crawler_task', dag_id='naver_news_summary_mail_dag', run_id='manual__2026-04-06T05:25:05+00:00', try_number=1, dag_version_id=UUID('019d6133-9f8b-7e56-a268-4f32151bbfc2'), map_index=-1, hostname='101858c45c06', context_carrier={}, task=<Task(PythonOperator): crawler_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 6, 5, 25, 8, 202250, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

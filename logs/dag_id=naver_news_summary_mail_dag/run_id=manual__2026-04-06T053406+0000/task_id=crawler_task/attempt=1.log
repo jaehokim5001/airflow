@@ -1,0 +1,16 @@
+{"timestamp":"2026-04-06T05:34:09.388438Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T05:34:09.392293Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T05:34:09.729563Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/naver_news_summary_mail_dag.py","lineno":21,"logger":"py.warnings"}
+{"timestamp":"2026-04-06T05:34:11.657737Z","level":"info","event":"[1/10] 지오영, 토털마케팅 3년 만에 지르텍 800만 개 돌파 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:13.435835Z","level":"info","event":"[2/10] 황종우號 해수부, 주요 보직에 여성 인재 전면 배치 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:14.795754Z","level":"info","event":"[3/10] 전인석 대표, 삼천당제약 주식 2500억 매각 계획 철회 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:16.196050Z","level":"info","event":"[4/10] 국내 1000대 상장사 매출 첫 2000조 돌파…삼성전자 24년 연속 1위 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:17.608037Z","level":"info","event":"[5/10] LS일렉, 美 빅테크에 1천억원 규모 초고압 변압기 수주 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:18.975865Z","level":"info","event":"[6/10] 용인·마포서 동시 수주⋯대우건설, 정비사업 2조 돌파 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:20.337726Z","level":"info","event":"[7/10] 공정위, 성우하이텍의 불공정하도급거래행위 제재 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:21.943729Z","level":"info","event":"[8/10] 박홍근 장관 “추경, 선거와 무관. 대통령 지지율, 굳이 추경으로 더 올릴 일 있나?”[시선집중] 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:23.297121Z","level":"info","event":"[9/10] 상승거래 꺾인 3월 서울 주택시장…7개월만 최저 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:24.664510Z","level":"info","event":"[10/10] 협동조합도 특화임대주택 운영 주체로…우선출자 한도 50%로 완화 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:24.666159Z","level":"info","event":"크롤링 완료. 데이터 저장 위치: /opt/airflow/data/raw_news.json","logger":"task.stdout"}
+{"timestamp":"2026-04-06T05:34:24.670211Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw_news.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-04-06T05:34:24.670810Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d6148-b643-7db4-a018-f73a28742a89'), task_id='crawler_task', dag_id='naver_news_summary_mail_dag', run_id='manual__2026-04-06T05:34:06+00:00', try_number=1, dag_version_id=UUID('019d6133-9f8b-7e56-a268-4f32151bbfc2'), map_index=-1, hostname='101858c45c06', context_carrier={}, task=<Task(PythonOperator): crawler_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 6, 5, 34, 9, 333452, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

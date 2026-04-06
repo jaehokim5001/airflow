@@ -46,17 +46,17 @@ def crawler_agent() -> str:
     if not keywords:
         print("Error: keywords.txt 에 등록된 키워드가 없습니다.")
         return ""
-
     all_results = {}
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
-    }
 
     # 2. 키워드별 순회 검색 수행
     for keyword in keywords:
         print(f"[{keyword}] 검색 데이터 수집 중...")
-        search_url = f"https://search.naver.com/search.naver?where=news&query={keyword}"
-        print(f"[{keyword}] 요청 URL: {search_url}")
+        # 봇 탐지 우회를 위해 모바일 버전(m.search) 및 모바일 UA 사용
+        search_url = f"https://m.search.naver.com/search.naver?where=m_news&query={keyword}"
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+        }
+        print(f"[{keyword}] 요청 URL (Mobile): {search_url}")
         
         try:
             time.sleep(1) # 차단 방지를 위한 지연

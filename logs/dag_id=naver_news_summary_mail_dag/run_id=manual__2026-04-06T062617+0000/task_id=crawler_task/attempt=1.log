@@ -1,0 +1,15 @@
+{"timestamp":"2026-04-06T06:26:19.294181Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T06:26:19.296449Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T06:26:21.568566Z","level":"info","event":"[1/10] LS일렉트릭, 美에 초고압 변압기 1000억원 규모 공급 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:23.315605Z","level":"info","event":"[2/10] 제4인뱅 재추진 수면 위로…정책 명분 vs 시장 현실 충돌 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:24.686334Z","level":"info","event":"[3/10] AMRO, 한국 올해 성장률 1.9% 유지…물가상승률 0.4%p올라 '2.3%' 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:26.047067Z","level":"info","event":"[4/10] 식약처, 신속심사 대상에 '바이오시밀러' 추가…근거규정 마련 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:27.422478Z","level":"info","event":"[5/10] 작년 국가채무 1304조…두차례 추경에 1년새 129조원 증가 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:28.790150Z","level":"info","event":"[6/10] 서울 주담대 상환 부담 2년6개월 만에 최고 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:30.195164Z","level":"info","event":"[7/10] 서비스물가, 3분기 만에 최고… 유류할증료 영향에 2분기 상승 압력 커져 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:31.975549Z","level":"info","event":"[8/10] '동행축제' 개막…지역축제와 연계해 지역으로 소비 확산 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:33.352968Z","level":"info","event":"[9/10] 도심 공공주택 복합사업 용적률 1.2→1.4배…“공급 속도전” 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:34.730689Z","level":"info","event":"[10/10] 셀트리온, 美 의약품 관세 리스크 해소…현지 생산으로 정면 돌파 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:34.731899Z","level":"info","event":"크롤링 완료. 데이터 저장 위치: /opt/airflow/data/raw_news.json","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:26:34.738945Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw_news.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-04-06T06:26:34.739504Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d6178-79a7-7b4b-8ad5-296e01beca5e'), task_id='crawler_task', dag_id='naver_news_summary_mail_dag', run_id='manual__2026-04-06T06:26:17+00:00', try_number=1, dag_version_id=UUID('019d6177-7a2d-799a-aeda-2325e42893db'), map_index=-1, hostname='101858c45c06', context_carrier={}, task=<Task(PythonOperator): crawler_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 6, 6, 26, 19, 186435, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

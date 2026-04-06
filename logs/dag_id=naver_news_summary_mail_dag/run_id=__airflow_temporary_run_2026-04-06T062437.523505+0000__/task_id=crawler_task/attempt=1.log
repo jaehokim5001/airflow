@@ -1,0 +1,10 @@
+{"timestamp":"2026-04-06T06:24:38.386152Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-06T06:24:38.388936Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/naver_news_summary_mail_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-06T06:24:41.018790Z","level":"info","event":"[1/10] 한화솔루션, “유상증자, 금감원 사전 논의” 구설수에 사과 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:24:42.408417Z","level":"info","event":"[2/10] KB금융, 스테이블코인 '써클' CEO와 회담…파트너십 강화 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:24:43.789857Z","level":"info","event":"[3/10] 전세사기 피해자 698건 추가 인정…LH, 3월 995가구 매입 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:24:43.828267Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_found","message":"Task Instance not found"}},"logger":"task"}
+{"timestamp":"2026-04-06T06:24:45.398519Z","level":"info","event":"[4/10] 공정위, ‘하도급 부실 계약서’ 성우하이텍에 과징금 4,600만원 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:24:46.756294Z","level":"info","event":"[5/10] '62조 유령코인' 빗썸사태는 시스템 문제...5대 거래소 모두 취약 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:24:48.114498Z","level":"info","event":"[6/10] 현대차그룹, 정책금융기관 4곳과 새만금 프로젝트 협업 수집 완료","logger":"task.stdout"}
+{"timestamp":"2026-04-06T06:24:48.851352Z","level":"error","event":"Task killed!","logger":"task"}

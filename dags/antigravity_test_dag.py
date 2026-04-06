@@ -1,13 +1,13 @@
-from datetime import datetime, timezone
+import pendulum
 import logging
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 def print_current_time():
-    current_time = datetime.now(timezone.utc)
-    logging.info(f"Current UTC time is: {current_time}")
-    print(f"Current UTC time is: {current_time}")
+    current_time = pendulum.now("Asia/Seoul")
+    logging.info(f"Current KST time is: {current_time}")
+    print(f"Current KST time is: {current_time}")
 
 with DAG(
     dag_id='antigravity_test_dag',
